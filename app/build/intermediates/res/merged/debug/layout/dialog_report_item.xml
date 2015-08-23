@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+
+		<Spinner
+		    android:id="@+id/spinnerItemReport"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="20dp"
+		    android:prompt="@string/item_prompt" />
+		
+		<Spinner
+		    android:id="@+id/spinnerMonth"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/spinnerItemReport"
+		    android:layout_marginTop="10dp"
+		    android:prompt="@string/month_prompt"
+		    android:entries="@array/months_array"/>
+		
+		<Spinner
+		    android:id="@+id/spinnerYear"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/spinnerMonth"
+		    android:layout_marginTop="10dp"
+		    android:prompt="@string/year_prompt"
+		    android:entries="@array/years_array" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/spinnerYear"
+		    android:layout_centerHorizontal="true"
+		    android:text="" />
+
+		<Button
+		    android:id="@+id/btnCancelReport"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_below="@+id/spinnerYear"
+		    android:layout_marginRight="5dp"
+		    android:text="Cancel" />
+		
+		<Button
+		    android:id="@+id/btnReportByItem"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_below="@+id/spinnerYear"
+		    android:layout_marginLeft="5dp"
+		    android:text="Show Report" />
+
+	</RelativeLayout>
+</ScrollView>
+<!-- From: file:/C:/Users/Abiroid/AndroidStudioProjects/DailyExpense/app/src/main/res/layout/dialog_report_item.xml -->

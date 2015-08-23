@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnByDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="By Date" />
+
+    <Button
+        android:id="@+id/btnByItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="By Item" />
+
+    <Button
+        android:id="@+id/btnFromDateToDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnByItem"
+        android:layout_alignBottom="@+id/btnByItem"
+        android:layout_centerHorizontal="true"
+        android:text="Date to Date" />
+
+    <TextView
+        android:id="@+id/txtReportType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnFromDateToDate"
+        android:layout_marginTop="10dp"
+        android:text="Report Type"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtReportTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtReportType"
+        android:layout_marginTop="5dp"
+        android:text="Total Expense"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lvExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtReportTotal" >
+    </ListView>
+
+</RelativeLayout>

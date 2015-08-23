@@ -1,0 +1,96 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtRdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="New Expense"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinnerItemReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerItemReport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnChangeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edPrice"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Change" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnChangeDate"
+        android:layout_alignLeft="@+id/txtRdate"
+        android:layout_alignTop="@+id/btnChangeDate"
+        android:layout_toLeftOf="@+id/btnChangeDate"
+        android:gravity="left|center"
+        android:text="Date"
+        android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/txtReportType"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/txtDate"
+         android:layout_alignParentLeft="true"
+         android:layout_alignTop="@+id/txtDate"
+         android:gravity="left|center"
+         android:text="Date"
+         android:textSize="15sp" />
+     
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Insert" />
+
+   <Button 
+       android:id="@+id/btnReports"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/btnInsert"
+       android:layout_marginTop="15dp"
+       android:text="Reports" />"
+
+</RelativeLayout>
+</ScrollView>
+<!-- From: file:/C:/Users/Abiroid/AndroidStudioProjects/DailyExpense/app/src/main/res/layout/activity_main.xml -->
